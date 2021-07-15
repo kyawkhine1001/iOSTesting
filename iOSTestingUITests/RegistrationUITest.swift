@@ -35,11 +35,6 @@ class RegistrationUITest:XCTestCase {
         app.buttons["Register"].tap()
         XCTAssert(app.alerts.staticTexts[phoneNumberMessage].exists,"Your phone number's error message was wrong!")
 
-        app.textFields["fullName"].tap()
-        app.textFields["fullName"].doubleTap()
-        app.menuItems["Cut"].tap()
-        app.textFields["fullName"].typeText(fullName)
-
         app.textFields["phoneNumber"].tap()
         app.textFields["phoneNumber"].typeText(phoneNumber)
 
